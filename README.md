@@ -101,6 +101,21 @@ Check if the API is running.
     }
     ```
 
+## ☁️ Deployment
+
+### Option 1: Vercel (Serverless)
+**Note**: Vercel has a 10s timeout on the free tier. Since this API scrapes 9 sites in real-time on the first load, it might time out on "Cold Starts".
+1.  Install Vercel CLI: `npm i -g vercel`
+2.  Run `vercel` in the project root.
+3.  Deploy!
+
+### Option 2: Render / Railway (Docker) - **Recommended**
+Since this API benefits from in-memory caching to avoid repeatedly scraping sites, a persistent instance is better.
+1.  Push code to GitHub.
+2.  Connect repository to **[Render](https://render.com)** or **[Railway](https://railway.app)**.
+3.  Select "Docker" as the build type.
+4.  It will automatically use the `Dockerfile` and deploy.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
