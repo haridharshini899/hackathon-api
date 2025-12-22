@@ -3,7 +3,7 @@ package fetcher
 import (
 	"context"
 	"fmt"
-	"hackathon-api/internal/entity"
+	"hackathon-api/pkg/entity"
 	"net/http"
 	"strings"
 	"time"

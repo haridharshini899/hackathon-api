@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"hackathon-api/internal/aggregator"
-	"hackathon-api/internal/api"
-	"hackathon-api/internal/fetcher"
+	"hackathon-api/pkg/aggregator"
+	"hackathon-api/pkg/api"
+	"hackathon-api/pkg/fetcher"
 	"log"
 	"net/http"
 	"time"

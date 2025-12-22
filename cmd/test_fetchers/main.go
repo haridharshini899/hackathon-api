@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"hackathon-api/internal/fetcher"
+	"hackathon-api/pkg/fetcher"
 	"time"
 )
 

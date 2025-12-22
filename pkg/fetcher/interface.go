@@ -2,7 +2,7 @@ package fetcher
 
 import (
 	"context"
-	"hackathon-api/internal/entity"
+	"hackathon-api/pkg/entity"
 )
 
 type Fetcher interface {

@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"hackathon-api/internal/aggregator"
-	"hackathon-api/internal/api"
-	"hackathon-api/internal/fetcher"
+	"hackathon-api/pkg/aggregator"
+	"hackathon-api/pkg/api"
+	"hackathon-api/pkg/fetcher"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"

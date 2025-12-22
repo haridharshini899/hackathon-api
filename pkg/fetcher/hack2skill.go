@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"hackathon-api/internal/entity"
+	"hackathon-api/pkg/entity"
 	"strings"
 	"time"
 

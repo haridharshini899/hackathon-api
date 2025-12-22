@@ -2,8 +2,8 @@ package aggregator
 
 import (
 	"context"
-	"hackathon-api/internal/entity"
-	"hackathon-api/internal/fetcher"
+	"hackathon-api/pkg/entity"
+	"hackathon-api/pkg/fetcher"
 	"sort"
 	"strings"
 	"sync"
