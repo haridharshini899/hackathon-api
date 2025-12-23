@@ -71,6 +71,10 @@ Fetch the list of aggregated hackathons.
     {
         "status": "success",
         "count": 15,
+        "platform_counts": {
+            "devfolio": 5,
+            "unstop": 10
+        },
         "generated_at": "2025-12-23T10:00:00Z",
         "data": [
             {

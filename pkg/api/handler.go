@@ -29,11 +29,17 @@ func (h *Handler) GetHackathons(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	counts := make(map[string]int)
+	for _, h := range data {
+		counts[h.Platform]++
+	}
+
 	response := map[string]interface{}{
-		"status":       "success",
-		"count":        len(data),
-		"generated_at": time.Now().Format(time.RFC3339),
-		"data":         data,
+		"status":          "success",
+		"count":           len(data),
+		"platform_counts": counts,
+		"generated_at":    time.Now().Format(time.RFC3339),
+		"data":            data,
 	}
 
 	w.Header().Set("Content-Type", "application/json")
